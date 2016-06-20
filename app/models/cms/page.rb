@@ -133,7 +133,7 @@ class Cms::Page < ActiveRecord::Base
   
   # Full url for a page
   def url
-    "http://" + "#{self.site.hostname}/#{self.site.path}/#{self.full_path}".squeeze("/")
+    "https://" + "#{self.site.hostname}/#{self.site.path}/#{self.full_path}".squeeze("/")
   end
   
   # Method to collect prevous state of blocks for revisions
